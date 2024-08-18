@@ -1,1 +1,59 @@
-<p>hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Career Guidance</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="colleges.html">Colleges</a></li>
+                <li><a href="aptitude-test.html">Aptitude Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main">
+            <section id="auth-section">
+                <div id="auth-toggle">
+                    <button id="toggle-login" class="active">Login</button>
+                    <button id="toggle-register">Register</button>
+                </div>
+                <div id="login-form" class="auth-form">
+                    <h2>Login to Your Account</h2>
+                    <form id="loginForm">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="email" required>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div id="register-form" class="auth-form" style="display:none;">
+                    <h2>Create a New Account</h2>
+                    <form id="registerForm">
+                        <label for="register-name">Name:</label>
+                        <input type="text" id="register-name" name="name" required>
+                        <label for="register-email">Email:</label>
+                        <input type="email" id="register-email" name="email" required>
+                        <label for="register-password">Password:</label>
+                        <input type="password" id="register-password" name="password" required>
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Career Guidance. All rights reserved.</p>
+    </footer>
+</body>
+</html>
